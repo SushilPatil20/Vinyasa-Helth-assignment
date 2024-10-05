@@ -10,11 +10,15 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@huggingface/transformers": "^3.0.0-alpha.19",
     "assemblyai": "^4.7.0",
     "axios": "^1.7.7",
+    "chart.js": "^4.4.4",
     "react": "^18.3.1",
+    "react-chartjs-2": "^5.2.0",
     "react-dom": "^18.3.1",
-    "react-google-login": "^5.2.2"
+    "react-google-login": "^5.2.2",
+    "recharts": "^2.12.7"
   },
   "devDependencies": {
     "@eslint/js": "^9.9.0",
