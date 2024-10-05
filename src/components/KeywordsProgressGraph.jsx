@@ -10,7 +10,7 @@ import {
   Legend,
 } from "chart.js";
 
-// Registering  necessary components from Chart.js
+// ---------- Registering necessary components from Chart.js ----------
 ChartJS.register(
   CategoryScale,
   LinearScale,
@@ -21,7 +21,7 @@ ChartJS.register(
 );
 
 const KeywordProgressGraph = ({ keywordData }) => {
-  // Extract keywords and frequencies
+  // ---------- Extract keywords and frequencies ----------
   const labels = keywordData.map((data) => data.keyword);
   const frequencies = keywordData.map((data) => data.frequency);
 
