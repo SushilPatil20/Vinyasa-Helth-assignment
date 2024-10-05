@@ -46,7 +46,7 @@ function App() {
   return (
     <div className="App px-6">
       <h1 className="text-center text-4xl text-blue-500 my-6">
-        Audio Transcription App
+        Note taker App
       </h1>
       <div className=" text-justify mx-auto">
         <button

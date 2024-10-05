@@ -1,6 +1,13 @@
-export const getWordFrequency = (text) => {
+
+/**
+ * 
+ * @param {String} summery 
+ * @returns Array
+ */
+
+export const getWordFrequency = (summery) => {
     // ----------- Convert text to lowercase and removing punctuation -----------
-    const words = text
+    const words = summery
         .toLowerCase()
         .replace(/[^\w\s]/g, "")
         .split(/\s+/);
