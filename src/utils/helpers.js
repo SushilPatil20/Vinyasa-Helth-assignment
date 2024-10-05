@@ -1,22 +1,21 @@
 export const getWordFrequency = (text) => {
-    // Convert text to lowercase and remove punctuation
+    // ----------- Convert text to lowercase and removing punctuation -----------
     const words = text
         .toLowerCase()
         .replace(/[^\w\s]/g, "")
         .split(/\s+/);
 
-    // Create an object to store word frequency
+    // ----------- object for storing word frequency -----------
     const frequency = {};
 
-    // const frequencyArray = [];
-
-    // Count frequency of each word
+    // ----------- If new then add it into frequency object  elese increse the frequency of word -----------
     words.forEach((word) => {
         if (word) {
             frequency[word] = (frequency[word] || 0) + 1;
         }
     });
 
+    // ----------- creating array of objects to display in chart -----------
     const frequencyArray = Object.keys(frequency).map((keyword) => ({
         keyword,
         frequency: frequency[keyword]
